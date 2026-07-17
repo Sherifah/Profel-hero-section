@@ -180,6 +180,7 @@ html, body {
 .page-loader {
   position: fixed;
   inset: 0;
+  bottom: 0;
   min-height: 100vh;
   background: #ffffff;
   z-index: 999;
