@@ -315,6 +315,17 @@ html, body {
     height: 156.075vw;
   }
 
+  .loader-count {
+    left: calc(50% + 44.860vw);
+    bottom: 9.579vw;
+    font-size: 23.364vw;
+    letter-spacing: -0.935vw;
+  }
+
+  .loader-line {
+    height: 1.402vw;
+  }
+
   .site-header {
     left: 3.271vw;
     top: 5.140vw;

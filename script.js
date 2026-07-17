@@ -47,7 +47,13 @@
     }
   }
 
-  requestAnimationFrame(function (t) { tick(t, t); });
+  if (reducedMotion) {
+    loaderNum.textContent = 100;
+    loaderLine.style.width = "100%";
+    setTimeout(slideOut, HOLD_AT_100);
+  } else {
+    requestAnimationFrame(function (t) { tick(t, t); });
+  }
 
   document.querySelectorAll(".name-photo").forEach(function (photo) {
     var direction = Math.random() < 0.5 ? -1 : 1; // left (-1) or right (1)
