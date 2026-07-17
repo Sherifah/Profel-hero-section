@@ -72,6 +72,10 @@ html, body {
   text-align: right;
 }
 
+.nav-mobile {
+  display: none;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -298,6 +302,109 @@ html, body {
   transform: scale(1.08);
   transition-delay: 0ms;
   z-index: 50;
+}
+
+/* ---------- Mobile (< 768px) ---------- */
+
+@media (max-width: 767px) {
+  .stage {
+    min-height: 156.075vw;
+  }
+
+  .hero {
+    height: 156.075vw;
+  }
+
+  .site-header {
+    left: 3.271vw;
+    top: 5.140vw;
+    width: 93.458vw;
+  }
+
+  .logo {
+    font-size: 5.607vw;
+    letter-spacing: -0.112vw;
+  }
+
+  .logo .reg {
+    font-size: 3.972vw;
+  }
+
+  .nav-links {
+    width: auto;
+    font-size: 3.972vw;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .names {
+    left: 1.635vw;
+    top: 44.626vw;
+    width: 96.507vw;
+    height: 106.776vw;
+  }
+
+  .name {
+    font-size: 10.692vw;
+    letter-spacing: -0.428vw;
+  }
+
+  .name-1 { left: calc(50% - 45.926vw); top: 18.224vw; }
+  .name-2 { left: calc(50% - 38.914vw); top: 29.673vw; }
+  .name-3 { left: calc(50% - 48.263vw); top: 41.121vw; }
+  .name-4 { left: calc(50% - 44.759vw); top: 52.570vw; }
+  .name-5 { left: calc(50% - 31.897vw); top: 64.019vw; }
+  .name-6 { left: calc(50% - 26.529vw); top: 75.468vw; }
+  .name-7 { left: calc(50% - 43.116vw); top: 86.916vw; }
+
+  .tag {
+    font-size: 2.352vw;
+    letter-spacing: -0.047vw;
+  }
+
+  .tag-judges {
+    left: 3.037vw;
+    top: 0.234vw;
+    width: 12.699vw;
+  }
+
+  .tag-standout {
+    left: 76.635vw;
+    top: 74.548vw;
+    width: 19.870vw;
+  }
+
+  .tag-block {
+    gap: 1.881vw;
+  }
+
+  .tag-memories {
+    left: 70.795vw;
+    top: 7.243vw;
+    width: 22.923vw;
+  }
+
+  .tag-brands {
+    left: 5.140vw;
+    top: 101.636vw;
+    width: 38.450vw;
+  }
+
+  .tag-title {
+    font-size: 2.352vw;
+    letter-spacing: -0.047vw;
+  }
+
+  .tag-sub {
+    font-size: 1.881vw;
+    letter-spacing: -0.038vw;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
